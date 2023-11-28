@@ -1,0 +1,32 @@
+.Nav {
+  padding-bottom: 2%;
+  height: 2rem;
+  position: fixed;
+  z-index: 15;
+  background-color: rgba(107, 106, 106, 0.6);
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-li {
+  display: block;
+  text-align: left;
+  padding: 14px 16px;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2em;
+  filter: brightness(90%);
+  transition: all 0.5s;
+  color: white !important;
+}
+
+.nav-li span {
+  color: white !important;
+}
