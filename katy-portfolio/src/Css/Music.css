@@ -1,0 +1,12 @@
+.music-section {
+  background-color: black;
+}
+
+.spotify {
+  display: flex;
+}
+
+.spotify-player {
+  border-radius: 0;
+  margin: 5px;
+}

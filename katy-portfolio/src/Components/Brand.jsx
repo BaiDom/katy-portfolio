@@ -1,5 +1,6 @@
 import "../Css/Brand.css";
 import { InstagramEmbed } from "react-social-media-embed";
+import { Link } from "react-router-dom";
 
 const Brand = () => {
   return (
@@ -7,7 +8,38 @@ const Brand = () => {
       <div className="page-container">
         <div className="brand-cont">
           <h1 className="brand-title">Brand Work</h1>
-          <div className="click-below">Click Below</div>
+          <div className="brands-list">
+            <div className="brand">
+              <Link
+                to={"https://store.liverpoolfc.com/"}
+                target="_blank"
+                className="brand-css"
+                id="liv-brand"
+              >
+                LFC Retail
+              </Link>
+            </div>
+            <div className="brand">
+              <Link
+                to={"https://www.on-running.com/en-gb/"}
+                target="_blank"
+                className="brand-css"
+              >
+                On Running
+              </Link>
+            </div>
+            <div className="brand">
+              {" "}
+              <Link
+                to={"https://redrunactivewear.com/"}
+                target="_blank"
+                className="brand-css"
+              >
+                Red Run
+              </Link>
+            </div>
+          </div>
+          {/* <div className="click-below">See More Below</div> */}
           <div className="brand-link-cont">
             <div className="overlay">
               <div className="brand-links">

@@ -29,6 +29,9 @@ figcaption {
   margin-left: auto;
 }
 
+@media (max-width: 350px) {
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

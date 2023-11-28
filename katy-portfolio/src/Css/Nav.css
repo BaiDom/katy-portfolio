@@ -30,3 +30,12 @@ ul {
 .nav-li span {
   color: white !important;
 }
+
+@media (max-width: 360px) {
+  .Nav {
+    height: 3rem;
+  }
+  .nav-li {
+    padding: 10px 16px;
+  }
+}

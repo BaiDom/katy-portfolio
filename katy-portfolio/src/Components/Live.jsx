@@ -42,6 +42,7 @@ const Live = () => {
                   />
                 </div>
               </div>
+
               <div className="helen-email">Helen@ITB.CO.UK</div>
             </div>
           </div>
