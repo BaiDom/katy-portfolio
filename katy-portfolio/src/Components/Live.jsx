@@ -3,13 +3,13 @@ import { InstagramEmbed } from "react-social-media-embed";
 
 const Live = () => {
   return (
-    <section className="live-section">
+    <section className="live-section" id="live-work">
       <div className="page-container">
         <div className="live-cont">
           <h1 className="live-title">Live</h1>
           <div className="live-click-below">Click Below</div>
           <div className="live-link-cont">
-            <div className="overlay">
+            <div className="live-overlay">
               <div className="live-links">
                 <div
                   className="live1"
@@ -42,8 +42,10 @@ const Live = () => {
                   />
                 </div>
               </div>
-
-              <div className="helen-email">Helen@ITB.CO.UK</div>
+              <div className="email-container" id="contact">
+                <div className="sam-email">sam@sm-mgmt.uk</div>
+                <div className="helen-email">helen@itb.co.uk</div>
+              </div>
             </div>
           </div>
         </div>

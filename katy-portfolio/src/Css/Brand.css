@@ -2,14 +2,14 @@
   background-image: url("../Assets/Katy-brand-min.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200vh;
+  height: 200svh;
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
   position: relative;
   background-attachment: fixed;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .overlay {
   position: absolute;
@@ -19,54 +19,94 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgba(0, 0, 0, 0.3);  */
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-  /* z-index: 2; */
-  /* overflow-y: scroll; */
   display: flex;
   flex-direction: column;
-  /* z-index: 1; */
+  /* justify-content: flex-end; */
+}
+
+.brand-work {
+  display: flex;
+  flex-direction: column;
 }
 
 .brand-cont {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  z-index: 11;
+  margin-top: 150px;
 }
 
 .brand-title {
   width: 100%;
   font-size: 10rem;
   color: rgb(210, 79, 79);
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: hard-light;
+  /* color: white; */
   z-index: 11;
-  -webkit-text-stroke: 2.5px white;
+  -webkit-text-stroke: 0.2px white;
 }
 
 .brands-list {
   display: flex;
-  font-size: 4rem;
+  font-size: 2rem;
   justify-content: space-evenly;
   cursor: pointer;
   z-index: 11;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
-.brand-css:hover {
-  color: white;
+.brand {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
 }
+
+.brand:hover > .brand-css {
+  color: #c8102e;
+}
+
 .brand-css {
   text-decoration: none;
   color: black;
   cursor: pointer;
-  color: #c8102e;
+  color: white;
+}
+
+.brand img {
+  margin-bottom: 30px;
 }
 
 #liv-brand {
-  color: #c8102e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#liv-brand:hover {
-  color: white;
+
+#liv-brand img {
+  object-fit: cover;
+  width: 150px;
+  height: 200px;
+}
+#on-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#on-brand img {
+  object-fit: cover;
+  width: 150px;
+  height: 200px;
+}
+#red-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#red-brand img {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
 }
 
 .click-below {
@@ -85,9 +125,7 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   z-index: 11;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 80%);
+
   padding: 50px;
 }
 
@@ -98,6 +136,7 @@
   filter: brightness(0.94);
   border: 1px white solid;
   border-radius: 6px;
+  box-shadow: 0px 2px 5px 1px black;
 }
 
 .brand-links div:hover {

@@ -1,0 +1,80 @@
+.intro-section {
+  background-image: url("../Assets/Katy-boss-night.JPG");
+  background-size: cover;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+
+.intro-cont {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  align-items: center;
+  justify-content: center;
+}
+
+.katy-title {
+  width: 100%;
+  font-size: 10rem;
+  z-index: 11;
+  /* margin-top: 200px; */
+  -webkit-text-stroke: 2.5px white;
+  /* margin-top: -250px; */
+}
+
+.katy-products {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 40px;
+}
+.katy-bio-sub {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.intro-swiper {
+  color: white;
+  margin: 100px;
+  width: 80%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.swiper-wrapper {
+  justify-content: center;
+}
+
+.swiper-slide {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  max-width: 350px;
+}
+
+.katy-bio {
+  margin-top: 100px;
+  width: 80%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  /* border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px); */
+}

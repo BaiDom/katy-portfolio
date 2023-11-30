@@ -4,12 +4,14 @@
 import BrandSec from "../Components/Brand.jsx";
 import Live from "./Live";
 import Music from "./Music.jsx";
+import Intro from "./Intro.jsx";
 
 const Home = () => {
   return (
     <main>
       <div className="page-container">
         <div className="flex">
+          <Intro />
           <BrandSec />
           <Music />
           <Live />

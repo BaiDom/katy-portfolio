@@ -7,9 +7,24 @@ const Nav = () => {
       <nav className="Nav">
         <ul>
           <li className="nav-li">
-            <NavLink style={{ textDecoration: "none" }}>
+            <a href={"#katy-intro"} style={{ textDecoration: "none" }}>
               <span>Katy Alex</span>
-            </NavLink>
+            </a>
+          </li>
+          <li className="nav-li">
+            <a href={"#brand-work"} style={{ textDecoration: "none" }}>
+              <span>Brand Work</span>
+            </a>
+          </li>
+          <li className="nav-li">
+            <a href={"#live-work"} style={{ textDecoration: "none" }}>
+              <span>Live Work</span>
+            </a>
+          </li>
+          <li className="nav-li">
+            <a href={"#contact"} style={{ textDecoration: "none" }}>
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
