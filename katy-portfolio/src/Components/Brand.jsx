@@ -14,26 +14,30 @@ const Brand = () => {
               <h1 className="brand-title">Brand Work</h1>
               <div className="brands-list">
                 <div className="brand" id="on-brand">
-                  <img className="on-badge" src={OnRun}></img>
+                  <img
+                    className="on-badge"
+                    src={OnRun}
+                    alt="on running logo"
+                  ></img>
                   <Link
                     to={"https://www.on-running.com/en-gb/"}
                     target="_blank"
                     className="brand-css"
                     id="on-brand"
                   >
-                    On Running
+                    {/* On Running */}
                   </Link>
                 </div>
                 <div className="brand" id="liv-brand">
                   {" "}
-                  <img className="lfc-badge" src={LFC}></img>
+                  <img className="lfc-badge" src={LFC} alt="lfc logo"></img>
                   <Link
                     to={"https://store.liverpoolfc.com/"}
                     target="_blank"
                     className="brand-css"
                     id="liv-brand"
                   >
-                    LFC Retail
+                    {/* LFC Retail */}
                   </Link>
                 </div>
                 <div className="brand" id="red-brand">
@@ -42,6 +46,7 @@ const Brand = () => {
                     src={
                       "https://redrunactivewear.com/cdn/shop/files/Red_Run_Logo_CMYK-03_280x@2x.png?v=1613777303"
                     }
+                    alt="ren run logo"
                   ></img>
                   <Link
                     to={"https://redrunactivewear.com/"}
@@ -49,12 +54,15 @@ const Brand = () => {
                     className="brand-css"
                     id="red-brand"
                   >
-                    Red Run
+                    {/* Red Run */}
                   </Link>
                 </div>
               </div>
               {/* <div className="click-below">See More Below</div> */}
               <div className="brand-link-cont">
+                <div className="mob-scroll-title">
+                  <span>&#8592;</span> Scroll <span>&#x2192;</span>
+                </div>
                 <div className="brand-links">
                   <div
                     className="inst1"
@@ -128,9 +136,21 @@ const Brand = () => {
                       width={328}
                     />
                   </div>
+                  <div
+                    className="inst9"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <InstagramEmbed
+                      url="https://www.instagram.com/p/CiIlr7vMghW/?img_index=1"
+                      width={328}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
+            <a href="#contact">
+              <div className="cta brand-cta">Brand Enquiries</div>
+            </a>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import BrandSec from "../Components/Brand.jsx";
 import Live from "./Live";
 import Music from "./Music.jsx";
 import Intro from "./Intro.jsx";
+import Contact from "./Contact.jsx";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
           <BrandSec />
           <Music />
           <Live />
+          <Contact />
         </div>
       </div>
     </main>

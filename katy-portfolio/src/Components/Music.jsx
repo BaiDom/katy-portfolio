@@ -3,6 +3,7 @@ import "../Css/Music.css";
 const Music = () => {
   return (
     <section className="music-section">
+      {/* <div className="spotify-title">Music</div> */}
       <div className="page-container spotify">
         <iframe
           className="spotify-player"

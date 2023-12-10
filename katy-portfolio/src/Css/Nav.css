@@ -1,11 +1,21 @@
 .Nav {
-  padding-bottom: 2%;
-  height: 2rem;
+  height: 4rem;
   position: fixed;
   z-index: 15;
-  background-color: rgba(107, 106, 106, 0.6);
   width: 100%;
   max-width: 1504px;
+}
+
+.full-nav {
+  display: flex;
+  z-index: 15;
+  width: 100%;
+  max-width: 1504px;
+  background-color: rgba(107, 106, 106, 0.6);
+}
+
+.mob-nav {
+  display: none;
 }
 
 ul {
@@ -14,6 +24,30 @@ ul {
   padding: 0;
   overflow: hidden;
   display: flex;
+}
+
+.nav-left {
+  height: 4rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  height: 4rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-right-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-right li {
+  padding: 0px 20px;
 }
 
 .nav-li {
@@ -30,16 +64,121 @@ ul {
 
 .nav-li a {
   color: white;
-  transition: all 0.1s ease-in-out;
+  transition: scale 0.1s ease-in-out;
 }
 
-.nav-li a:hover {
+#katy-nav {
+  border-right: solid black 2px;
+  padding-right: 10px;
+  padding: 14px 16px;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+#katy-nav a {
+  color: #c8102e;
+  font-size: 2.3rem;
+}
+
+.nav-li:hover a {
   color: black;
   color: #c8102e;
 }
 
 .nav-li:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.nav-right img {
+  width: 45px;
+}
+
+@media (max-width: 2560px) {
+  .Nav {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-left-ul {
+    align-items: center;
+  }
+  .nav-left-ul li {
+    font-size: 1.4rem;
+  }
+  #katy-nav span {
+    display: flex;
+    font-size: 1.6rem;
+    height: 100%;
+  }
+  .nav-right img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-nav {
+    display: none;
+  }
+  .mob-nav {
+    display: block;
+    background-color: rgba(107, 106, 106, 0.6);
+  }
+  #katy-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+  .menu-toggle {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    position: absolute;
+    left: 50px;
+    font-size: 3rem;
+    transition: all ease 0.2s;
+    filter: invert(1);
+  }
+
+  .menu-toggle.close {
+    transform: rotate(45deg);
+
+    /* transform: rotate(135deg); */
+  }
+
+  .mob-nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mob-nav-content-visible {
+    display: block;
+    transition: all ease 0.3s;
+  }
+
+  .mob-nav-content-hidden {
+    display: none;
+  }
+
+  #katy-nav {
+    border: none;
+  }
+  .nav-li:hover {
+    transform: scale(1.1);
+    transform: translateX(10px);
+  }
+}
+
+@media (max-width: 425px) {
+  .menu-toggle {
+    left: 30px;
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 360px) {
@@ -48,5 +187,16 @@ ul {
   }
   .nav-li {
     padding: 10px 16px;
+  }
+  .menu-toggle {
+    left: 20px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu-toggle {
+    left: 10px;
+    font-size: 2rem;
   }
 }

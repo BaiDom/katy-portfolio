@@ -2,7 +2,6 @@ import "./App.css";
 
 import { Route, Routes } from "react-router-dom";
 import Nav from "./Components/Nav";
-
 import Home from "./Components/Home";
 
 function App() {

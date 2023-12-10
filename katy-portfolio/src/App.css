@@ -12,6 +12,11 @@ figcaption {
   display: none;
 }
 
+.App a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -27,6 +32,21 @@ figcaption {
   max-width: 1504px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.cta {
+  border: 3px solid white;
+  background-color: #c8102e;
+  color: white;
+  border-radius: 16px;
+  padding: 10px 5px;
+  font-size: 2rem;
+  width: 300px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all ease-in 0.3s;
+}
+.cta:hover {
+  transform: scale(1.07);
 }
 
 @media (max-width: 350px) {

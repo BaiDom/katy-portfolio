@@ -1,7 +1,7 @@
 .intro-section {
   background-image: url("../Assets/Katy-boss-night.JPG");
   background-size: cover;
-  height: 100dvh;
+  height: 1500px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -9,6 +9,9 @@
   position: relative;
   background-attachment: fixed;
   overflow-y: scroll;
+  padding: 50px 0px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .intro-cont {
@@ -21,7 +24,7 @@
 
 .katy-title {
   width: 100%;
-  font-size: 10rem;
+  font-size: clamp(2rem, 10rem, 10rem);
   z-index: 11;
   /* margin-top: 200px; */
   -webkit-text-stroke: 2.5px white;
@@ -42,29 +45,16 @@
   font-size: 1.5rem;
 }
 
-.intro-swiper {
-  color: white;
-  margin: 100px;
-  width: 80%;
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* border-radius: 16px; */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(5px);
-}
-
-.swiper-wrapper {
-  justify-content: center;
-}
-
-.swiper-slide {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  padding: 10px;
-  max-width: 350px;
+.cta-intro {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 100px 0px;
 }
 
 .katy-bio {
+  position: absolute;
+  bottom: 50px;
   margin-top: 100px;
   width: 80%;
   color: white;
@@ -73,8 +63,106 @@
   font-size: 1.5rem;
   padding: 20px;
   background: rgba(0, 0, 0, 0.5);
-  /* border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(5px); */
+  overflow-x: hidden;
+}
+
+.radio-support {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.radio-support img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+}
+.radio-support img:nth-of-type(1) {
+  filter: invert(1);
+}
+
+#george {
+  filter: invert(1);
+}
+
+@media (max-width: 1024px) {
+  .katy-bio {
+    width: 90%;
+  }
+  .radio-support img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    height: 1250px;
+    background-position: center;
+  }
+  .cta-intro {
+    font-size: 1.5rem;
+    width: 250px;
+  }
+  .katy-title {
+    font-size: 8rem;
+  }
+  .katy-products {
+    font-size: 1.5rem;
+  }
+  .katy-bio-sub {
+    font-size: 1.3rem;
+  }
+  .katy-bio {
+    font-size: 1.2rem;
+  }
+  .radio-support img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro-section {
+    background-position: right 35% bottom 45%;
+    height: 1500px;
+  }
+  .katy-title {
+    font-size: 5rem;
+  }
+  .katy-products {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+  .katy-bio-sub {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+  .katy-bio {
+    position: absolute;
+    bottom: 0;
+  }
+  .radio-support {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .katy-products {
+    font-size: 1rem;
+  }
+  .katy-bio-sub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro-section {
+    height: 1500px;
+  }
+  .katy-title {
+    font-size: 4rem;
+  }
 }
