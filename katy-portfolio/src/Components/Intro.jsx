@@ -10,29 +10,31 @@ const Intro = () => {
       <div className="page-container">
         <div className="overlay">
           <div className="intro-cont">
-            <div className="katy-title">Katy Alex</div>
-            <div className="katy-products">
-              DJ | Producer | Writer | Singer | Model
+            <div className="hero-cont">
+              <div className="katy-title">Katy Alex</div>
+              <div className="katy-products">
+                DJ | Producer | Writer | Singer | Model
+              </div>
+              <div className="katy-bio-sub">
+                {/* <span style={{ color: "#c8102e" }}> */}
+                Proud Scouser and Devoted Liverpool Fan #AllezAllezAllez
+                {/* </span>{" "} */}
+                <a href="#contact ">
+                  <div className="cta cta-intro ">Make An Enquiry</div>
+                </a>
+              </div>
             </div>
-            <div className="katy-bio-sub">
-              - {/* <span style={{ color: "#c8102e" }}> */}
-              Proud Scouser and Devoted Liverpool Fan #AllezAllezAllez
-              {/* </span>{" "} */}-
-            </div>
-            <a href="#contact ">
+            {/* <a href="#contact ">
               <div className="cta cta-intro ">Make An Enquiry</div>
-            </a>
+            </a> */}
             <div className="katy-bio">
               <div className="intro-releases">
                 Latest releases include collaborations with Roger Sanchez, Sammy
-                Virji, and Laidback Luke.
+                Virji, and Laidback Luke. Working with labels such as Toolroom,
+                D4D4nce, and Mixmash.
               </div>
               <br></br>
 
-              <div className="intro-labels">
-                Working with labels such as Toolroom, D4D4nce, and Mixmash.
-              </div>
-              <br></br>
               <div className="intro-support">
                 Supported by: <br></br>
                 <div className="radio-support">

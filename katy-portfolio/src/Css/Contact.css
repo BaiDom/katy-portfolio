@@ -6,27 +6,29 @@
   background-attachment: fixed;
   overflow-y: scroll;
   padding: 50px 0px;
-  background-color: black;
   text-align: left;
+  background-color: black;
 }
 
 .contact-flex {
   display: flex;
   flex-direction: column;
   font-size: 2.5rem;
-  color: white;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
+  color: white;
 }
 
 .contact-title {
-  font-size: 10rem;
+  font-size: 8rem;
   color: rgb(210, 79, 79);
   mix-blend-mode: hard-light;
   /* color: white; */
   z-index: 11;
   -webkit-text-stroke: 0.2px white;
   font-family: myFirstFont;
+  position: absolute;
+  top: 40px;
 }
 
 .socials-cont {
@@ -60,16 +62,38 @@
 }
 .left-half {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.enquiry-text {
+  margin-inline: 30px;
+  font-size: 2rem;
+}
+
 .right-half {
   width: 50%;
 }
 
 #contact-img {
   object-fit: cover;
+  aspect-ratio: 1/1;
   width: 100%;
+}
+
+.email-cont {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
 }
 
 #email {
   padding: 10px;
+  border: 2px solid white;
+  border-radius: 0.25rem;
+  width: 250px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
 }

@@ -11,7 +11,6 @@ const Contact = () => {
     <section className="contact-section" id="contact">
       <div className="page-container">
         <div className="contact-flex">
-          <div className="contact-title">Get In Touch</div>
           {/* <div className="socials-cont">
             <div className="socials-title">Socials</div>
             <div className="social-links">
@@ -40,9 +39,23 @@ const Contact = () => {
           </div> */}
           <div className="contact-top">
             <div className="left-half">
-              <div className="sam-email" id="email">
-                {" "}
-                For Brand Work enquiries contact: <br></br>sam@sm-mgmt.uk
+              <div className="contact-title">Get In Touch</div>
+
+              <div className="enquiry-text">
+                If you'd like to enquire about Katy being part of your project,
+                click one of the links below!
+              </div>
+              <div className="email-cont">
+                <div className="sam-email" id="email">
+                  <div className="sam">Sam</div>
+                  {/* For Brand Work enquiries
+                  contact: <br></br>sam@sm-mgmt.uk */}
+                </div>
+                <div className="helen-email" id="email">
+                  <div className="helen">Helen</div>
+                  {/* For Live Show enquiries
+                  contact:<br></br> helen@itb.co.uk */}
+                </div>
               </div>
             </div>
             <div className="right-half">
@@ -55,7 +68,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="contact-bottom">
+          {/* <div className="contact-bottom">
             <div className="left-half">
               {" "}
               <img
@@ -65,13 +78,8 @@ const Contact = () => {
                 alt="katy live work pic"
               ></img>
             </div>
-            <div className="right-half">
-              <div className="helen-email" id="email">
-                {" "}
-                For Live Show enquiries contact:<br></br> helen@itb.co.uk
-              </div>
-            </div>
-          </div>
+            <div className="right-half"></div>
+          </div> */}
         </div>
       </div>
     </section>
